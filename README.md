@@ -1,8 +1,8 @@
 # Airbnb: New User Bookings | Kaggle Competition
 My Solution to Airbnb: New User Bookings Competition on [Kaggle](https://www.kaggle.com/competitions/airbnb-recruiting-new-user-bookings)
 
-# Introduction
-## What is Airbnb?
+## Introduction
+### What is Airbnb?
 - [Airbnb](https://www.airbnb.com/) is an **online platform** where people can list
 or rent properties for **short-term use**. Be it an entire
 home, a spare bedroom or even a sofa, anyone
@@ -11,14 +11,14 @@ on Airbnb.
 - New​ users​ on​ Airbnb​ can​ book​ a place​ to​ stay​ in​ *34,000+ cities*​ across​ *190+​ countries*.
 - The platform was launched in **2008**.
 
-## Problem Category
+### Problem Category
 Multiclass Classification
 
-## Problem Statement
+### Problem Statement
 Given a list of users along with their demographics, web session records, and some summary statistics, the objective is to **predict the top 5** travel destinations in decreasing order of relevance for each of the new user.
 
-# Dataset
-## Stats
+## Dataset
+### Stats
 - Observations:
     - Training Users: 213,451
     - Test Users: 62,096
@@ -26,7 +26,7 @@ Given a list of users along with their demographics, web session records, and so
 - Features: 
     - users: 15
     - sessions: 6
-## Files Description
+### Files Description
 - **train_users_2.csv** - the training set of users
 - **test_users.csv** - the test set of users
     - **id**: user id
@@ -56,7 +56,7 @@ Given a list of users along with their demographics, web session records, and so
 - **age_gender_bkts.csv** - summary statistics of users' age group, gender, country of destination.
 - **sample_submission.csv** - correct format for submitting your predictions.
 
-# Libraries Used
+## Libraries Used
 - SciKit-Learn
 - NumPy
 - Pandas
@@ -66,13 +66,13 @@ Given a list of users along with their demographics, web session records, and so
     - Matplotlib
     - Seaborn
 
-# Model Approach
+## Model Approach
 - [XGBoost](https://xgboost.readthedocs.io/en/stable/) Classifier
 - Extended Hyperparameter Tuning
 - Cross Validation
 - [NDCG](https://en.wikipedia.org/wiki/Discounted_cumulative_gain#Normalized_DCG) Evaluation Metric
 
-# Model Performance
+## Model Performance
 - Training Score: 83.07%
 - Test Score: 88.13%
 
